@@ -10,7 +10,7 @@ docker push xterase2001/multi-server:$SHA
 docker push xterase2001/multi-worker:$SHA
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=xterase2001/multi-server:$SHA
-kubectl set image deployments/client-deployemnt client=xterase2001/multi-client:$SHA
-kubectl set image deployments/worker-deployemnt worker=xterase2001/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=xterase2001/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=xterase2001/multi-worker:$SHA
 
 
